@@ -22,6 +22,9 @@ jobs:
       - name: install
         run: |
           pip install pytest
+      - name: run
+        run: |
+          python src/main.py
       - name: test
         run: |
           pytest test/test.py
